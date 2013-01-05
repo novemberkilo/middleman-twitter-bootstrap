@@ -1,83 +1,28 @@
-// Twitter Bootstrap
-@import 'bootstrap'
-@import 'bootstrap-responsive'
-
 // Web fonts
 @import url(http://fonts.googleapis.com/css?family=Montserrat)
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700)
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif)
 @import url(http://fonts.googleapis.com/css?family=Belgrano)
 
-/*Variables*/
-
-$primary-orange:   #fe8a16
-$hover-orange:     #f67502
-$steel-blue:       #303b41 
-$bright-blue:      #4892bc
-$dark-grey:        #4b4b48
-
-=custom-font
-  font-family: "Belgrano"
-
-=content-custom-font
-  font-family: "Montserrat"
-
-.sg-heading-1
-  +custom-font
-  color:  $steel-blue
-
-.sg-heading-2
-  @extend  .sg-heading-1
-
-.sg-heading-3
-  @extend  .sg-heading-2
-  color:  $bright-blue
-
-.sg-main-body
-  +content-custom-font
-
-.sg-secondary-body
-  @extend  .sg-main-body
-  font-size:  12px
-  line-height:  18px
-
-.sg-text-link-1
-  @extend .sg-main-body
-  color:  $primary-orange
-  text-decoration:  none
-  &:hover
-    color:  $hover-orange
-
-
 // Your own styles go here.
+
+// Idiomatic customisation of twitter bootstrap is 
+// via use of variables that they provide for precisely
+// this purpose. For example:
+
+$bodyBackground:  #F1F1F1
+$textColor:       #393536
+$sansFontFamily:  "Montserrat"
+$serifFontFamily: "Belgrano"
 
 body
   // Without this (borrowed from one of the bootstrap samples) the bootstrap navbar
   // clobbers the top of the content.
   padding-top: 60px
   padding-bottom: 40px
-  background-color: #F1F1F1
 
   footer
     padding-top: 20px
 
-.container
-  h1
-    @extend .sg-heading-1
-
-  h2
-    @extend .sg-heading-2
-
-  h3
-    @extend .sg-heading-3
-
-  a
-    @extend .sg-text-link-1
-  
-  p
-    @extend .sg-main-body
-
-  dl
-    @extend .sg-secondary-body
-
+// Twitter Bootstrap
+@import 'bootstrap'
+@import 'bootstrap-responsive'
 
