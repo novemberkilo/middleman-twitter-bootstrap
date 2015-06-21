@@ -5,10 +5,11 @@ gem "haml"
 gem "sass"
 gem "builder"
 
-gem "redcarpet", "~> 2.0.0"
+gem "redcarpet"
 gem "middleman"
 gem "middleman-blog"
-gem 'bootstrap-sass', '~> 2.2.2.0'
+gem 'bootstrap-sass'
+gem 'therubyracer'
 
 # Compass plugins
 gem 'susy', "~>1.0.1" # Susy
